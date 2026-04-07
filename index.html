@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Md Shahid Ansari - Java Developer Portfolio">
+    <title>My Portfolio</title>
+   <style> * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header1 {
+    background-color: #f3971b;
+    color: white;
+    padding: 15px 25px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    font-size: 32px;
+    color: black;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header2 {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.name {
+    font-size: 1.8rem;
+}
+.name1 {
+    font-size: 2.5rem;
+    color: #f3971b;
+     margin-top: 15px; 
+}
+.header3 {
+    background-color: #292929;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.center-text {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 13px;
+}
+.box-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.box-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid white;
+}
+.intro {
+    flex: 2;
+}
+.about {
+    text-align: center;
+    color: #f3971b;
+    margin-bottom: 20px;
+}
+#skills {
+    margin-top: 60px; 
+   
+}
+.skill-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    align-items: center;
+}
+.skill-item {
+    background: #f3971b;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 60%; 
+    font-weight: 500;
+    text-align: left;
+}
+#project {
+    margin: 60px auto 20px;
+}
+.project-item {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+.project-item ul {
+    list-style: none;
+    padding: 0;
+}
+.project-item li {
+    background: #f3971b;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+.project-item a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.project-item a:hover {
+    text-decoration: underline;
+}
+#education {
+    margin: 60px auto;
+}
+.edu {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+.edu ul {
+    list-style: none;
+    padding: 0;
+}
+.edu li {
+    background: #f3971b;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+.edu p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+#contact {
+    margin: 60px auto;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.contact-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #f3971b;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.contact-btn:hover {
+    background: #ffb347;
+    transform: translateY(-3px);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.font:hover {
+    background: #f3971b;
+    color: #000;
+}
+.top-btn {
+    margin-top: 15px;
+}
+.top-btn a {
+    color: #f3971b;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-item,
+.edu,
+.contact {
+    margin-top: 10px;
+    line-height: 1.6;
+} 
+.header4 {
+    background-color: #303030;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.font {
+    color: #f3971b;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .header3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .box-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name1 {
+        font-size: 2rem;
+    }
+}</style>
+</head>
+<body>
+    <header class="header1">
+        <div class="main">
+            <div class="icon">
+                <h2 class="logo">Md Shahid Ansari</h2>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="header2" id="home">
+        <div class="heading1">
+            <section id="home">
+                <h3 class="name">Hi, I'm Md Shahid Ansari</h3>
+                <h2 class="name1">Software Engineer</h2>
+            </section>
+        </div>
+    </section>
+    <section class="header3">
+        <div class="box-content">
+            <div class="box-img" style="background-image:url('image.jpg'); height:350px;width:280px;"></div>
+        </div>
+        <div class="intro">
+            <section id="about">
+                <h2 class="about">~<u>About</u> me</h2>
+                <h2 class="center-text">I am a Software Engineer</h2>
+                <div class="intro1">
+                    <p> I am Md Shahid Ansari, a passionate and dedicated Computer Science student aspiring to become a
+                        Software Engineer. I completed my 12th grade from Cambridge Senior Secondary School, Buxar,
+                        Bihar. Currently, I am pursuing a Bachelor of Technology (B.Tech) in Computer Science and
+                        Engineering from R.D. Engineering College, Ghaziabad, which is affiliated with Dr. A.P.J. Abdul
+                        Kalam Technical University, Lucknow.
+                        I have a strong interest in learning new technologies and solving real-world problems through
+                        programming. My hobbies include reading books, playing games, and continuously improving my
+                        technical skills. I am a hardworking and self-motivated individual who strives for excellence in
+                        everything I do.
+                        My goal is to become a skilled Software Developer and a responsible individual who contributes
+                        positively to society.
+                    </p>
+                </div>
+            </section>
+            <section id="skills">
+                <h1>My Skills</h1>
+                <div class="skill-container">
+                    <div class="skill-item">
+                        <strong>Languages:</strong> Java, Python, Basic C
+                    </div>
+                    <div class="skill-item">
+                        <strong>Frontend:</strong> HTML, CSS, JavaScript, React
+                    </div>
+                    <div class="skill-item">
+                        <strong>Backend:</strong> Spring Boot
+                    </div>
+                    <div class="skill-item">
+                        <strong>Database:</strong> MySQL
+                    </div>
+                  <div class="skill-item">
+                        <strong>Developer Tools:</strong> Git, GitHub
+                    </div>
+                </div>
+            </section>
+            <section id="project">
+                <div>
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="project-item">
+                    <ul>
+                        <li>
+                            <strong>Portfolio Website</strong><br>
+                            Built using HTML & CSS<br>
+                            🔗 <a href="https://github.com/shahidansaricse/shahidcse.github.io" target="_blank">View Code</a>
+                             <a href="https://shahidansaricse.github.io" target="_blank">Live Demo</a>
+                        </li>
+                        <li>
+                            <strong>Banking System & Restaurant Menu</strong><br>
+                            Developed using C Programming<br>
+                            🔗 <a href="https://github.com/yourusername/c-projects" target="_blank">View Code</a>
+                        </li>
+                        <li>
+                            <strong>Python Mini Projects</strong> (Banking System, To-Do List,etc.)<br>
+                            🔗 <a href="https://github.com/shahidansaricse/Python" target="_blank">View Code</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="education">
+                <div class="h1">
+                    <h2>Education</h2>
+                </div>
+                <div class="edu">
+                    <ul>
+                        <li><strong>B.Tech (CSE):</strong> RD Engineering College, Ghaziabad (AKTU, 2023–2027)</li>
+                        <li><strong>Class 12th:</strong> Cambridge Senior Secondary School, Buxar, Bihar</li>
+                        <li><strong>Class 10th:</strong> D B Public School, Bhojpur, Bihar</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="h2">
+                    <h1>Contact Me</h1>
+                </div>
+                <div class="contact">
+                    <a href="tel:9341072349" class="contact-btn">
+                        📱 Call Me
+                    </a>
+
+                    <a href="mailto:mdshahidans2005@gmail.com" class="contact-btn">
+                        📧 Email Me
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/md-shahid-ansari-7544b731a" target="_blank"
+                        class="contact-btn">
+                        🔗 LinkedIn
+                    </a>
+                </div>
+            </section>
+        </section>
+    </section>
+    <footer class="header4">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/md-shahid-ansari-7544b731a" target="_blank" class="font">
+                🔗 LinkedIn
+            </a>
+
+            <a href="mailto:mdshahidans2005@gmail.com" class="font">
+                📧 Email
+            </a>
+
+            <a href="tel:9341072349" class="font">
+                📱 Call
+            </a>
+        </div>
+        <div class="top-btn">
+            <a href="#home">⬆ Back to Top</a>
+        </div>
+    </footer>
+</body>
+</html>
