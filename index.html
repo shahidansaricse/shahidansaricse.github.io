@@ -3,267 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Md Shahid Ansari - Java Developer Portfolio">
     <title>My Portfolio</title>
-   <style>
-*{ 
-    margin:0;
+   <style> * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial;
-    border:border-box;
 }
-.header1{
-    height:60px;
-    background-color:#f3971b ;
-    color:white;
+html {
+    scroll-behavior: smooth;
+}
+.header1 {
+    background-color: #f3971b;
+    color: white;
+    padding: 15px 25px;
+}
+.main {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content:space-evenly;
-    font-family: Arial;
+    flex-wrap: wrap;
 }
-.main{
-    width:1200px;
-    height:75px;
-    margin:auto;
+.logo {
+    font-size: 32px;
+    color: black;
 }
 .navbar {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header2 {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.name {
+    font-size: 1.8rem;
+}
+.name1 {
+    font-size: 2.5rem;
+    color: #f3971b;
+     margin-top: 15px; 
+}
+.header3 {
+    background-color: #292929;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.center-text {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 13px;
+}
+.box-content {
+    flex: 1;
     display: flex;
     justify-content: center;
 }
-.icon{
-    width:350px;
-    float:left;
-}
-.logo{
-    font:arial;
-    font-weight: lighter;
-    font-size: 33px;
-    color:rgba(0, 0, 0, 0.888);
-    padding-left: 25px;
-    float:left;
-    padding-top: 10px;  
-}
-
-ul{
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
-    margin-left:60px;
-    margin-top:20px;
-    font-size:18px;
-}
-ul a{
-    color:#ffffff;
-    font-family:Arial;
-    font-weight: bold;
-}
-
-.header2{
-    height:270px;
-    background-color:#292929 ;
-    color:white;
-    display: flex;
-    justify-content:space-evenly;
-    font-family: Arial;
-}
-.heading1{
-    margin-top:50px;
-}
-.name{
-    font-size: 2rem;
-    align-items: center;
-    font-weight:600;
-}
-
-.name1{
-    margin-top: 15px;
-    font-size: 3rem;
-    font-family:"arial";
-    color:#f3971b;
-}
-.about{
-    margin-top: 20px;
-    font-size:1.5rem;
-    color:#f3971b;
-    margin-left:115px;
-    margin-bottom: 60px;
-}
-.header3{
-    height:1200px;
-    background-color:#292929 ;
-    color:white;
-    display: flex;
-    font-family: Arial;
-}
-.box-img{
+.box-img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-image: cover;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid white;
 }
-.box-content{
-    margin-top: 40px;
-    float:left;
-    margin-left :80px;
-    margin-right :100px;
-    }
-.intro1{
-    margin-top:30px;
-    margin-right:100px ;
+.intro {
+    flex: 2;
 }
-
-.h{
-    margin-top: 60px;
-    margin-left: 10px ;
-    float: left;
-    margin-bottom: 10px;
+.about {
+    text-align: center;
+    color: #f3971b;
+    margin-bottom: 20px;
 }
-
+#skills {
+    margin-top: 60px; 
+   
+}
 .skill-container {
-    flex-direction: column;
-    float:left;
-    margin-left: -50px;
-    margin-top: 120px;
+    margin-top: 20px;
     display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    align-items: center;
 }
 .skill-item {
-    padding-bottom: 10px;
-    color: white; 
-    font-size: 1rem;   
+    background: #f3971b;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 60%; 
+    font-weight: 500;
+    text-align: left;
 }
-.p{
-  margin-top: 300px;
-  margin-left:-230px;
+#project {
+    margin: 60px auto 20px;
 }
-.project-item{
-    margin-top:8px;
-    line-height:25px;
+.project-item {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
 }
-.h1{
-    margin-top:60px;
-    margin-left:-230px;
+.project-item ul {
+    list-style: none;
+    padding: 0;
 }
-.edu{
-    margin-top:10px;
-    line-height:25px;
-    margin-left:-230px;
+.project-item li {
+    background: #f3971b;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
 }
-.h2{
-    margin-left:-230px;
-    margin-top:60px;
+.project-item a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
 }
-.Contact{
-    margin-left:-230px;
-    margin-top:10px;
-    line-height:25px;
+.project-item a:hover {
+    text-decoration: underline;
 }
-.header4{
-    height:100px;
-    background-color:#303030 ;
-    color:white;
+#education {
+    margin: 60px auto;
+}
+.edu {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+.edu ul {
+    list-style: none;
+    padding: 0;
+}
+.edu li {
+    background: #f3971b;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+.edu p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+#contact {
+    margin: 60px auto;
+}
+.contact {
     display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    font-family: Arial;
-    } 
-.font{
-    color:#f3971b;
-    font-size: 1.5rem;
-    font-family: Arial;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
-   </style>
+.contact-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #f3971b;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.contact-btn:hover {
+    background: #ffb347;
+    transform: translateY(-3px);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.font:hover {
+    background: #f3971b;
+    color: #000;
+}
+.top-btn {
+    margin-top: 15px;
+}
+.top-btn a {
+    color: #f3971b;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-item,
+.edu,
+.contact {
+    margin-top: 10px;
+    line-height: 1.6;
+} 
+.header4 {
+    background-color: #303030;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.font {
+    color: #f3971b;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .header3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .box-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name1 {
+        font-size: 2rem;
+    }
+}</style>
 </head>
 <body>
     <header class="header1">
-       <div class="main">
-           <div class="icon">
-            <h2 class="logo">Md Shahid Ansari</h2>
+        <div class="main">
+            <div class="icon">
+                <h2 class="logo">Md Shahid Ansari</h2>
             </div>
             <nav>
-                <ul clss="navbar" >
+                <ul class="navbar">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li> 
-                    <li><a href="#skills">Skill</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#project">Projects</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>  
-                    </ul>   
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
-            </div>
         </div>
     </header>
-    <header class="header2">
+    <section class="header2" id="home">
         <div class="heading1">
-             <section id="home">
+            <section id="home">
                 <h3 class="name">Hi, I'm Md Shahid Ansari</h3>
-                <h2 class="name1">Web Developer</h2>
-            </section>    
-            </div>
-    </header>
-   
-    <header class="header3">
-           <div class="box-content">
-                <div class="box-img" style=" background-image:url('image.jpg'); height:385px;width:260px; "></div>
-            </div>
-      
-            <div class="intro">
-                <section id="about">
-                    <h2 class="about">~<u>About</u> me</h2>
-                            <div class="intro1">
-                                <p>Hi, I’m Md Shahid Ansari.I am pursuing a Bachelor of Technology (B.Tech) 
-                                    in Computer Science and Engineering (CSE) at RD Engineering College, Ghaziabad, 
-                                    affiliated with Dr. APJ Abdul Kalam Technical University, Lucknow. I completed 
-                                    my class 12th at Cambridge Senior Secondary School in Buxar, Bihar.I am from Buxar Bihar.
-                                    My Hobbies is Reading Books and Playing games and solving new problems and learning new technologies.
-                                    My Aim is becoming a good Software Engineer and a good Human being in Life.</p>
-                    </div>
-                </section>
-                <section id="skills">
-                    <div class="h"><h1>My Skills</h1></div>
-                        <div class="skill-container">
-                            <div class="skill-item"><li>HTML</li></div>
-                            <div class="skill-item"><li>CSS</li></div>
-                            <div class="skill-item"><li>C</li></div>
-                            <div class="skill-item"><li>Python</li></div>
-                        </div>
-                </section>
-                <div class="p">
-                    <section id="project">
-                        <div><h1>Projects</h1></div>
-                        <div class="project-item">
-                            <p><li>Clon of Amazon and Portfolio website using Html and CSS</li></p>
-                            <p><li>Banking System and Resturant menu project using C</li></p>
-                            <p><li>Some Mini projects in python : Banking System and  To do List</li></p>
-                        </div>
-                    </section>
+                <h2 class="name1">Software Engineer</h2>
+            </section>
+        </div>
+    </section>
+    <section class="header3">
+        <div class="box-content">
+            <div class="box-img" style="background-image:url('image.jpg'); height:350px;width:280px;"></div>
+        </div>
+        <div class="intro">
+            <section id="about">
+                <h2 class="about">~<u>About</u> me</h2>
+                <h2 class="center-text">I am a Software Engineer</h2>
+                <div class="intro1">
+                    <p> I am Md Shahid Ansari, a passionate and dedicated Computer Science student aspiring to become a
+                        Software Engineer. I completed my 12th grade from Cambridge Senior Secondary School, Buxar,
+                        Bihar. Currently, I am pursuing a Bachelor of Technology (B.Tech) in Computer Science and
+                        Engineering from R.D. Engineering College, Ghaziabad, which is affiliated with Dr. A.P.J. Abdul
+                        Kalam Technical University, Lucknow.
+                        I have a strong interest in learning new technologies and solving real-world problems through
+                        programming. My hobbies include reading books, playing games, and continuously improving my
+                        technical skills. I am a hardworking and self-motivated individual who strives for excellence in
+                        everything I do.
+                        My goal is to become a skilled Software Developer and a responsible individual who contributes
+                        positively to society.
+                    </p>
                 </div>
-                <section id="education">
-                    <div class="h1"><h1>Education</h1></div>
-                    <div class="edu">
-                        <p><li>Class 10th : D B Public School Dobahan Mufassil Bhojpur Bihar </li></p>
-                        <p><li>Class 12th : Cambridge Sr Sec School Kathkauli Buxar Bihar </li></p>
-                        <p><li>Graducation(B.tech CSE) : Rd Engineering College Ghaziabad </li></p>
-                        <p>And University is Dr. APJ Abdul Kalam Technical University Lucknow (2023-27)</p>
-                       
+            </section>
+            <section id="skills">
+                <h1>My Skills</h1>
+                <div class="skill-container">
+                    <div class="skill-item">
+                        <strong>Languages:</strong> Java, Python, Basic C
                     </div>
-                </section>
-                <section id="contact">
-                    <div class="h2"><h1>Contact Me</h1></div>
-                    <div class="Contact">
-                        <p><li>Mobile No. : 9341072349 </li></p>
-                        <p><li> mdshahidans2005@gmail.com</li></p>
+                    <div class="skill-item">
+                        <strong>Frontend:</strong> HTML, CSS, JavaScript, React
                     </div>
-                </section>  
-        </header>
-    <header class="header4">
-        <a class="font" >Linkdin</a>
-        <a class="font" >Twitter</a>
-        <a class="font" >Email</a>
-      
-        <a href="#home" >
-        <font face="arial" color="#ffffff" size="5">Top</font>
-        </a>
-    </div>  
-    </header>  
+                    <div class="skill-item">
+                        <strong>Backend:</strong> Spring Boot
+                    </div>
+                    <div class="skill-item">
+                        <strong>Database:</strong> MySQL
+                    </div>
+                  <div class="skill-item">
+                        <strong>Developer Tools:</strong> Git, GitHub
+                    </div>
+                </div>
+            </section>
+            <section id="project">
+                <div>
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="project-item">
+                    <ul>
+                        <li>
+                            <strong>Portfolio Website</strong><br>
+                            Built using HTML & CSS<br>
+                            🔗 <a href="https://github.com/shahidansaricse/shahidansaricse.github.io" target="_blank">View Code</a>
+                             <a href="https://shahidansaricse.github.io" target="_blank">Live Demo</a>
+                        </li>
+                        <li>
+                            <strong>Banking System & Restaurant Menu</strong><br>
+                            Developed using C Programming<br>
+                            🔗 <a href="https://github.com/yourusername/c-projects" target="_blank">View Code</a>
+                        </li>
+                        <li>
+                            <strong>Python Mini Projects</strong> (Banking System, To-Do List,etc.)<br>
+                            🔗 <a href="https://github.com/shahidansaricse/Python" target="_blank">View Code</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="education">
+                <div class="h1">
+                    <h2>Education</h2>
+                </div>
+                <div class="edu">
+                    <ul>
+                        <li><strong>B.Tech (CSE):</strong> RD Engineering College, Ghaziabad (AKTU, 2023–2027)</li>
+                        <li><strong>Class 12th:</strong> Cambridge Senior Secondary School, Buxar, Bihar</li>
+                        <li><strong>Class 10th:</strong> D B Public School, Bhojpur, Bihar</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="h2">
+                    <h1>Contact Me</h1>
+                </div>
+                <div class="contact">
+                    <a href="tel:9341072349" class="contact-btn">
+                        📱 Call Me
+                    </a>
+
+                    <a href="mailto:mdshahidans2005@gmail.com" class="contact-btn">
+                        📧 Email Me
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/md-shahid-ansari-7544b731a" target="_blank"
+                        class="contact-btn">
+                        🔗 LinkedIn
+                    </a>
+                </div>
+            </section>
+        </section>
+    </section>
+    <footer class="header4">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/md-shahid-ansari-7544b731a" target="_blank" class="font">
+                🔗 LinkedIn
+            </a>
+
+            <a href="mailto:mdshahidans2005@gmail.com" class="font">
+                📧 Email
+            </a>
+
+            <a href="tel:9341072349" class="font">
+                📱 Call
+            </a>
+        </div>
+        <div class="top-btn">
+            <a href="#home">⬆ Back to Top</a>
+        </div>
+    </footer>
 </body>
 </html>
